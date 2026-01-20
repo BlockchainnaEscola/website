@@ -1,0 +1,422 @@
+/* Blockchain na Escola - Minimal Style */
+/* Inspired by marcelorefi.github.io */
+
+:root {
+  --text-color: #24292e;
+  --text-secondary: #586069;
+  --link-color: #0366d6;
+  --link-hover: #0056b3;
+  --bg-color: #ffffff;
+  --border-color: #e1e4e8;
+  --highlight-bg: #f6f8fa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav a {
+  margin-right: 1.25rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+nav a.active {
+  color: var(--link-color);
+}
+
+/* Header/Logo area */
+.site-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.site-header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.site-header .logo:hover {
+  text-decoration: none;
+}
+
+.site-header .tagline {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  border-bottom: none;
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.hero .description {
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero .stats {
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+/* Cards/Highlights */
+.highlight-card {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background: var(--bg-color);
+}
+
+.highlight-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.highlight-card .meta {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.highlight-card p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2.5rem;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+  background: var(--highlight-bg);
+  border-radius: 6px;
+}
+
+.stat-item .number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--link-color);
+  display: block;
+}
+
+.stat-item .label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Timeline */
+.timeline {
+  border-left: 2px solid var(--border-color);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.timeline-item {
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.65rem;
+  top: 0.5rem;
+  width: 10px;
+  height: 10px;
+  background: var(--link-color);
+  border-radius: 50%;
+}
+
+.timeline-item .year {
+  font-weight: 700;
+  color: var(--link-color);
+}
+
+/* Partner Card */
+.partner-card {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.partner-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.05rem;
+}
+
+.partner-card .details {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.partner-card .details strong {
+  color: var(--text-color);
+}
+
+.partner-card .links {
+  font-size: 0.9rem;
+}
+
+.partner-card .links a {
+  margin-right: 0.75rem;
+}
+
+/* Category Section */
+.category {
+  margin-bottom: 2rem;
+}
+
+.category h2 {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Project/Publication Item */
+.item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.05rem;
+}
+
+.item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.item .links {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact-section {
+  background: var(--highlight-bg);
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section h3 {
+  margin-top: 0;
+}
+
+/* Quick Links */
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.quick-links a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--link-color);
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.quick-links a:hover {
+  background: var(--link-color);
+  color: white;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--text-secondary);
+}
+
+footer a:hover {
+  color: var(--link-color);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    margin-right: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero .subtitle {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quick-links {
+    flex-direction: column;
+  }
+
+  .quick-links a {
+    text-align: center;
+  }
+}
