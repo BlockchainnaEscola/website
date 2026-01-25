@@ -536,3 +536,66 @@ footer a:hover {
     height: 120px;
   }
 }
+
+/* Media Page Styles */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.video-item {
+  position: relative;
+  padding-bottom: 177.78%; /* 9:16 aspect ratio for shorts */
+  height: 0;
+  overflow: hidden;
+  border: 2px solid #111;
+  border-radius: 12px;
+  box-shadow: 2px 2px 0 #111;
+}
+
+.video-item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #111;
+  border-radius: 12px;
+  box-shadow: 2px 2px 0 #111;
+  transition: transform 0.3s;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.02);
+}
+
+/* Mobile responsive for media */
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .photo-gallery img {
+    height: 150px;
+  }
+}
