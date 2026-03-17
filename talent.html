@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web3 Talent Database | Blockchain na Escola</title>
-  <meta name="description" content="Brazil's first university-to-Web3 pipeline connecting students to careers in the EVM ecosystem, regenerative finance, and circular economy.">
-  <meta name="keywords" content="blockchain, education, Web3, Brazil, talent, EVM, ReFi, regenerative finance, circular economy, UBI, careers, university, certification">
-  <meta property="og:title" content="Blockchain na Escola | Web3 Talent Database">
-  <meta property="og:description" content="Brazil's First University-to-Web3 Pipeline">
+  <title>Banco de Talentos Web3 | Blockchain na Escola</title>
+  <meta name="description" content="Primeira ponte universidade-Web3 do Brasil combinando fundamentos de blockchain com engenharia avançada de tokens, conectando estudantes a carreiras no ecossistema Ethereum.">
+  <meta name="keywords" content="blockchain, educação, Web3, Brasil, talentos, EVM, ReFi, finanças regenerativas, economia circular, RBI, carreiras, universidade, certificação">
+  <meta property="og:title" content="Blockchain na Escola | Banco de Talentos Web3">
+  <meta property="og:description" content="Primeira Ponte Universidade-Web3 do Brasil">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Language Toggle -->
+  <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+    <button id="lang-toggle" class="chip yellow" style="cursor: pointer; padding: 0.5rem; border: 2px solid #111;">
+      🇬🇧 EN
+    </button>
+  </div>
+
   <div class="wrap">
     <a href="index.html" class="home-btn">&larr; Home</a>
 
     <header class="site-header">
       <div class="info">
-        <h1>Web3 Talent Database</h1>
-        <p class="tagline">Brazil's First University-to-Web3 Pipeline</p>
+        <h1>
+          <span data-lang="pt">Banco de Talentos Web3</span>
+          <span data-lang="en" style="display:none">Web3 Talent Database</span>
+        </h1>
+        <p class="tagline">
+          <span data-lang="pt">Web 3.0 e Engenharia de Tokens: Da Teoria à Prática</span>
+          <span data-lang="en" style="display:none">Web 3.0 and Token Engineering: From Theory to Practice</span>
+        </p>
       </div>
     </header>
 
@@ -33,233 +47,532 @@
     </nav>
 
     <main>
+
+      <!-- Hero -->
       <section>
         <div class="card">
-          <span class="chip pink">New</span>
+          <span class="chip pink">
+            <span data-lang="pt">Novo</span>
+            <span data-lang="en" style="display:none">New</span>
+          </span>
           <span class="chip green">2025</span>
-          <span class="chip yellow">7 States</span>
-          <p>Connecting Brazilian university students to Web3 careers across the EVM ecosystem, regenerative finance, and circular economy initiatives.</p>
+          <span class="chip yellow">
+            <span data-lang="pt">Piloto UNIFACS</span>
+            <span data-lang="en" style="display:none">UNIFACS Pilot</span>
+          </span>
+          <p>
+            <span data-lang="pt">Primeira ponte universidade-Web3 do Brasil combinando fundamentos de blockchain com engenharia avançada de tokens, conectando estudantes a carreiras no ecossistema Ethereum através de certificação estruturada.</span>
+            <span data-lang="en" style="display:none">Brazil's first university-to-Web3 bridge combining blockchain fundamentals with advanced token engineering, connecting students to careers in the Ethereum ecosystem through structured certification.</span>
+          </p>
         </div>
       </section>
 
+      <!-- O Desafio / The Challenge -->
       <section>
-        <h2>The Challenge</h2>
+        <h2>
+          <span data-lang="pt">O Desafio</span>
+          <span data-lang="en" style="display:none">The Challenge</span>
+        </h2>
         <div class="card">
-          <p>Brazil is the <strong>6th largest crypto market</strong> globally, yet lacks structured pathways for youth entering Web3 careers.</p>
+          <p>
+            <span data-lang="pt">O Brasil é o <strong>6º maior mercado cripto globalmente</strong>, mas faltam caminhos estruturados para jovens entrarem em carreiras Web3.</span>
+            <span data-lang="en" style="display:none">Brazil is the <strong>6th largest crypto market</strong> globally, yet lacks structured pathways for youth entering Web3 careers.</span>
+          </p>
           <ul>
-            <li><strong>52% increase</strong> in blockchain skills demand since 2022</li>
-            <li>Universities lack Web3 curriculum and career guidance</li>
-            <li>Companies struggle to find qualified local talent</li>
-            <li>Students don't know where to start or how to build portfolios</li>
-            <li>ReFi and circular economy projects need local builders who understand community needs</li>
+            <li>
+              <span data-lang="pt"><strong>52% de aumento</strong> na demanda por habilidades blockchain desde 2022</span>
+              <span data-lang="en" style="display:none"><strong>52% increase</strong> in blockchain skills demand since 2022</span>
+            </li>
+            <li>
+              <span data-lang="pt">Universidades carecem de currículo Web3 e orientação de carreira</span>
+              <span data-lang="en" style="display:none">Universities lack Web3 curriculum and career guidance</span>
+            </li>
+            <li>
+              <span data-lang="pt">Empresas lutam para encontrar talentos locais qualificados</span>
+              <span data-lang="en" style="display:none">Companies struggle to find qualified local talent</span>
+            </li>
+            <li>
+              <span data-lang="pt">Estudantes não sabem por onde começar ou como construir portfólios</span>
+              <span data-lang="en" style="display:none">Students don't know where to start or how to build portfolios</span>
+            </li>
+            <li>
+              <span data-lang="pt">Projetos ReFi e economia circular precisam de construtores locais que entendem necessidades comunitárias</span>
+              <span data-lang="en" style="display:none">ReFi and circular economy projects need local builders who understand community needs</span>
+            </li>
           </ul>
         </div>
       </section>
 
+      <!-- A Solução / The Solution -->
       <section>
-        <h2>The Solution</h2>
+        <h2>
+          <span data-lang="pt">A Solução</span>
+          <span data-lang="en" style="display:none">The Solution</span>
+        </h2>
         <div class="card">
-          <span class="chip green">Platform</span>
-          <h3>Integrated Talent Pipeline</h3>
-          <p>An integrated platform combining Airtable, Web3 authentication, and AI-powered matching to connect students with opportunities across the EVM ecosystem:</p>
+          <span class="chip green">
+            <span data-lang="pt">Plataforma</span>
+            <span data-lang="en" style="display:none">Platform</span>
+          </span>
+          <h3>
+            <span data-lang="pt">Pipeline Integrado de Talentos</span>
+            <span data-lang="en" style="display:none">Integrated Talent Pipeline</span>
+          </h3>
+          <p>
+            <span data-lang="pt">Uma plataforma integrada combinando Airtable, autenticação Web3 e matching alimentado por IA para conectar estudantes com oportunidades no ecossistema EVM.</span>
+            <span data-lang="en" style="display:none">An integrated platform combining Airtable, Web3 authentication, and AI-powered matching to connect students with opportunities across the EVM ecosystem.</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Módulos do Curso / Course Modules -->
+      <section>
+        <h2>
+          <span data-lang="pt">Módulos do Curso</span>
+          <span data-lang="en" style="display:none">Course Modules</span>
+        </h2>
+
+        <div class="card">
+          <span class="chip yellow">Módulo 0 · 10h</span>
+          <h3>
+            <span data-lang="pt">RBI &amp; Cidadania Digital</span>
+            <span data-lang="en" style="display:none">UBI &amp; Digital Citizenship</span>
+          </h3>
           <ul>
-            <li><strong>6 certification tracks</strong> from fundamentals to specialized skills</li>
-            <li><strong>Automated matching</strong> between student profiles and company needs</li>
-            <li><strong>Hands-on portfolio building</strong> through real projects</li>
-            <li><strong>Direct connection</strong> to companies, hackathons, bounties, and ReFi initiatives</li>
+            <li>
+              <span data-lang="pt">Compreendendo Renda Básica Universal na era digital</span>
+              <span data-lang="en" style="display:none">Understanding Universal Basic Income in the digital age</span>
+            </li>
+            <li>
+              <span data-lang="pt">Protocolo e ecossistema GoodDollar (500.000+ membros globalmente)</span>
+              <span data-lang="en" style="display:none">GoodDollar protocol and ecosystem (500,000+ members globally)</span>
+            </li>
+            <li>
+              <span data-lang="pt">Experiência prática com mecanismos de distribuição RBI</span>
+              <span data-lang="en" style="display:none">Hands-on experience with UBI distribution mechanisms</span>
+            </li>
+            <li>
+              <span data-lang="pt">Moedas comunitárias e redes de valor local</span>
+              <span data-lang="en" style="display:none">Community currencies and local value networks</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="chip pink">Módulo I · 15h</span>
+          <h3>
+            <span data-lang="pt">Fundamentos de Blockchain e Web3</span>
+            <span data-lang="en" style="display:none">Blockchain and Web3 Fundamentals</span>
+          </h3>
+          <ul>
+            <li>
+              <span data-lang="pt">Contexto histórico: cultura Cyberpunk e movimento cypherpunk</span>
+              <span data-lang="en" style="display:none">Historical context: Cyberpunk culture and the cypherpunk movement</span>
+            </li>
+            <li>
+              <span data-lang="pt">Arquitetura blockchain: blocos, consenso (PoW, PoS), criptografia</span>
+              <span data-lang="en" style="display:none">Blockchain architecture: blocks, consensus (PoW, PoS), cryptography</span>
+            </li>
+            <li>
+              <span data-lang="pt">Bitcoin vs Ethereum: conceito de <em>programmable money</em></span>
+              <span data-lang="en" style="display:none">Bitcoin vs Ethereum: the concept of <em>programmable money</em></span>
+            </li>
+            <li>
+              <span data-lang="pt">Ecossistema Ethereum: EVM, L2s, sidechains</span>
+              <span data-lang="en" style="display:none">Ethereum ecosystem: EVM, L2s, sidechains</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="chip green">Módulo II · 15h</span>
+          <h3>
+            <span data-lang="pt">Tokenização e Economia Digital</span>
+            <span data-lang="en" style="display:none">Tokenization and Digital Economy</span>
+          </h3>
+          <ul>
+            <li>
+              <span data-lang="pt">Tipos de tokens: ERC-20, ERC-721, ERC-1155</span>
+              <span data-lang="en" style="display:none">Token types: ERC-20, ERC-721, ERC-1155</span>
+            </li>
+            <li>
+              <span data-lang="pt">O Significado da Descentralização (framework Vitalik Buterin)</span>
+              <span data-lang="en" style="display:none">The Meaning of Decentralization (Vitalik Buterin framework)</span>
+            </li>
+            <li>
+              <span data-lang="pt">Governança como Capital: DAOs, modelos de votação, Assets Under Power (AUP)</span>
+              <span data-lang="en" style="display:none">Governance as Capital: DAOs, voting models, Assets Under Power (AUP)</span>
+            </li>
+            <li>
+              <span data-lang="pt">Tokenização de ativos do mundo real (RWA)</span>
+              <span data-lang="en" style="display:none">Real-world asset tokenization (RWA)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="chip yellow">Módulo III · 15h</span>
+          <h3>
+            <span data-lang="pt">Engenharia de Tokens</span>
+            <span data-lang="en" style="display:none">Token Engineering</span>
+          </h3>
+          <ul>
+            <li>
+              <span data-lang="pt">Ciclo de design: descoberta, design, modelagem, implementação</span>
+              <span data-lang="en" style="display:none">Design cycle: discovery, design, modeling, implementation</span>
+            </li>
+            <li>
+              <span data-lang="pt">Teoria de jogos e design de incentivos</span>
+              <span data-lang="en" style="display:none">Game theory and incentive design</span>
+            </li>
+            <li>
+              <span data-lang="pt">Tokenomics: supply, distribuição, vesting, mecanismos de staking</span>
+              <span data-lang="en" style="display:none">Tokenomics: supply, distribution, vesting, staking mechanisms</span>
+            </li>
+            <li>
+              <span data-lang="pt">Ferramentas de modelagem e simulação (cadCAD)</span>
+              <span data-lang="en" style="display:none">Modeling and simulation tools (cadCAD)</span>
+            </li>
+            <li>
+              <span data-lang="pt">Segurança: MEV, flash loans, ataques Sybil</span>
+              <span data-lang="en" style="display:none">Security: MEV, flash loans, Sybil attacks</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="chip pink">Módulo IV · 15h</span>
+          <h3>
+            <span data-lang="pt">Solidity e Desenvolvimento</span>
+            <span data-lang="en" style="display:none">Solidity and Development</span>
+          </h3>
+          <ul>
+            <li>
+              <span data-lang="pt">Sintaxe Solidity, tipos de dados, estrutura de contratos</span>
+              <span data-lang="en" style="display:none">Solidity syntax, data types, contract structure</span>
+            </li>
+            <li>
+              <span data-lang="pt">Implementação de padrões ERC</span>
+              <span data-lang="en" style="display:none">ERC standard implementation</span>
+            </li>
+            <li>
+              <span data-lang="pt">Boas práticas de segurança: reentrancy, overflow, front-running</span>
+              <span data-lang="en" style="display:none">Security best practices: reentrancy, overflow, front-running</span>
+            </li>
+            <li>
+              <span data-lang="pt">Ferramentas: Remix, Hardhat, Foundry</span>
+              <span data-lang="en" style="display:none">Tools: Remix, Hardhat, Foundry</span>
+            </li>
+            <li>
+              <span data-lang="pt">Deploy em testnet (Sepolia, Polygon Mumbai)</span>
+              <span data-lang="en" style="display:none">Testnet deployment (Sepolia, Polygon Mumbai)</span>
+            </li>
+            <li>
+              <span data-lang="pt"><strong>Projeto Final:</strong> Contrato tokenizado completo com documentação</span>
+              <span data-lang="en" style="display:none"><strong>Final Project:</strong> Complete tokenized contract with documentation</span>
+            </li>
           </ul>
         </div>
       </section>
 
+      <!-- Detalhes do Programa / Program Details -->
       <section>
-        <h2>Certification Tracks</h2>
-
+        <h2>
+          <span data-lang="pt">Detalhes do Programa</span>
+          <span data-lang="en" style="display:none">Program Details</span>
+        </h2>
         <div class="card">
-          <span class="chip pink">Fundamentals</span>
-          <h3>Web3 101</h3>
-          <p>Introduction to blockchain, wallets, transactions, and the EVM ecosystem (Ethereum, Celo, Polygon, Scroll, and more). Foundation for all other tracks.</p>
-        </div>
-
-        <div class="card">
-          <span class="chip green">Economics</span>
-          <h3>Token Engineering</h3>
-          <p>Tokenomics, incentive design, and economic modeling for Web3 projects, protocols, and community currencies.</p>
-        </div>
-
-        <div class="card">
-          <span class="chip yellow">Development</span>
-          <h3>Solidity</h3>
-          <p>Smart contract development, security best practices, and deployment across EVM-compatible chains.</p>
-        </div>
-
-        <div class="card">
-          <span class="chip pink">Strategy</span>
-          <h3>Product Development</h3>
-          <p>Web3 product management, user research, go-to-market strategy, and growth tactics for decentralized applications.</p>
-        </div>
-
-        <div class="card">
-          <span class="chip green">Emerging</span>
-          <h3>AI + Web3</h3>
-          <p>Integration of artificial intelligence with blockchain technology, including AI agents, on-chain AI, and automated systems.</p>
-        </div>
-
-        <div class="card">
-          <span class="chip yellow">DAOs</span>
-          <h3>Governance & ReFi</h3>
-          <p>DAO structures, voting mechanisms, treasury management, regenerative finance principles, and circular economy design.</p>
+          <ul>
+            <li>
+              <span data-lang="pt"><strong>Duração:</strong> 22 semanas (60 horas totais: 40h teoria + 20h prática)</span>
+              <span data-lang="en" style="display:none"><strong>Duration:</strong> 22 weeks (60 total hours: 40h theory + 20h practice)</span>
+            </li>
+            <li>
+              <span data-lang="pt"><strong>Formato:</strong> Híbrido (presencial + online)</span>
+              <span data-lang="en" style="display:none"><strong>Format:</strong> Hybrid (in-person + online)</span>
+            </li>
+            <li>
+              <span data-lang="pt"><strong>Modalidade:</strong> Certificação estruturada com construção de portfólio</span>
+              <span data-lang="en" style="display:none"><strong>Modality:</strong> Structured certification with portfolio building</span>
+            </li>
+          </ul>
         </div>
       </section>
 
+      <!-- Metas / Goals -->
       <section>
-        <h2>Regenerative Finance & Circular Economy</h2>
+        <h2>
+          <span data-lang="pt">Metas</span>
+          <span data-lang="en" style="display:none">Goals</span>
+        </h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="number">500</span>
+            <span class="label">
+              <span data-lang="pt">Estudantes na turma piloto</span>
+              <span data-lang="en" style="display:none">Students in pilot cohort</span>
+            </span>
+          </div>
+          <div class="stat-item">
+            <span class="number">70%</span>
+            <span class="label">
+              <span data-lang="pt">Taxa de conclusão do curso</span>
+              <span data-lang="en" style="display:none">Course completion rate</span>
+            </span>
+          </div>
+          <div class="stat-item">
+            <span class="number">5</span>
+            <span class="label">
+              <span data-lang="pt">Módulos completados</span>
+              <span data-lang="en" style="display:none">Modules completed</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cronograma / Timeline -->
+      <section>
+        <h2>
+          <span data-lang="pt">Cronograma</span>
+          <span data-lang="en" style="display:none">Timeline</span>
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="year">
+              <span data-lang="pt">Semanas 1–6</span>
+              <span data-lang="en" style="display:none">Weeks 1–6</span>
+            </span>
+            <p>
+              <span data-lang="pt"><strong>Fase 1: Fundação + Módulo RBI</strong> — Deploy da plataforma, integração de parceiros. Módulo 0: RBI &amp; Cidadania Digital completo.</span>
+              <span data-lang="en" style="display:none"><strong>Phase 1: Foundation + UBI Module</strong> — Platform deployment, partner integration. Module 0: UBI &amp; Digital Citizenship complete.</span>
+            </p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">
+              <span data-lang="pt">Semanas 7–12</span>
+              <span data-lang="en" style="display:none">Weeks 7–12</span>
+            </span>
+            <p>
+              <span data-lang="pt"><strong>Fase 2: Aprendizado Central</strong> — Módulos I–II: Fundamentos blockchain e tokenização.</span>
+              <span data-lang="en" style="display:none"><strong>Phase 2: Core Learning</strong> — Modules I–II: Blockchain fundamentals and tokenization.</span>
+            </p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">
+              <span data-lang="pt">Semanas 13–18</span>
+              <span data-lang="en" style="display:none">Weeks 13–18</span>
+            </span>
+            <p>
+              <span data-lang="pt"><strong>Fase 3: Tópicos Avançados</strong> — Módulos III–IV: Engenharia de tokens e desenvolvimento Solidity.</span>
+              <span data-lang="en" style="display:none"><strong>Phase 3: Advanced Topics</strong> — Modules III–IV: Token engineering and Solidity development.</span>
+            </p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">
+              <span data-lang="pt">Semanas 19–22</span>
+              <span data-lang="en" style="display:none">Weeks 19–22</span>
+            </span>
+            <p>
+              <span data-lang="pt"><strong>Fase 4: Construção de Portfólio</strong> — Projetos finais: contratos tokenizados com documentação completa. Matching com empresas e colocação de carreira inicia.</span>
+              <span data-lang="en" style="display:none"><strong>Phase 4: Portfolio Building</strong> — Final projects: tokenized contracts with full documentation. Company matching and career placement begins.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Finanças Regenerativas & Economia Circular -->
+      <section>
+        <h2>
+          <span data-lang="pt">Finanças Regenerativas &amp; Economia Circular</span>
+          <span data-lang="en" style="display:none">Regenerative Finance &amp; Circular Economy</span>
+        </h2>
 
         <div class="card">
           <span class="chip pink">ReFi</span>
-          <span class="chip green">Circular Economy</span>
-          <h3>Building for Regeneration</h3>
-          <p>We're not just training developers—we're preparing talent for a regenerative economy. Our curriculum integrates:</p>
+          <span class="chip green">
+            <span data-lang="pt">Economia Circular</span>
+            <span data-lang="en" style="display:none">Circular Economy</span>
+          </span>
+          <h3>
+            <span data-lang="pt">Construindo para a Regeneração</span>
+            <span data-lang="en" style="display:none">Building for Regeneration</span>
+          </h3>
+          <p>
+            <span data-lang="pt">Não estamos apenas treinando desenvolvedores—estamos preparando talentos para uma economia regenerativa.</span>
+            <span data-lang="en" style="display:none">We're not just training developers—we're preparing talent for a regenerative economy.</span>
+          </p>
           <ul>
-            <li><strong>Regenerative Finance (ReFi)</strong> - Using Web3 to create positive environmental and social impact</li>
-            <li><strong>Circular Economy</strong> - Designing systems where value flows back to communities</li>
-            <li><strong>Community Currencies</strong> - Local tokens that strengthen regional economies</li>
+            <li>
+              <span data-lang="pt"><strong>Finanças Regenerativas (ReFi)</strong> — Usando Web3 para criar impacto ambiental e social positivo</span>
+              <span data-lang="en" style="display:none"><strong>Regenerative Finance (ReFi)</strong> — Using Web3 to create positive environmental and social impact</span>
+            </li>
+            <li>
+              <span data-lang="pt"><strong>Economia Circular</strong> — Desenhando sistemas onde valor flui de volta para comunidades</span>
+              <span data-lang="en" style="display:none"><strong>Circular Economy</strong> — Designing systems where value flows back to communities</span>
+            </li>
+            <li>
+              <span data-lang="pt"><strong>Moedas Comunitárias</strong> — Tokens locais que fortalecem economias regionais</span>
+              <span data-lang="en" style="display:none"><strong>Community Currencies</strong> — Local tokens that strengthen regional economies</span>
+            </li>
           </ul>
         </div>
 
         <div class="card">
-          <span class="chip yellow">UBI</span>
-          <span class="chip pink">Experiments</span>
-          <h3>Universal Basic Income Experiments</h3>
-          <p>Students will learn from and contribute to real UBI experiments happening across Brazil and Latin America:</p>
-          <ul>
-            <li>Understanding tokenized UBI distribution mechanisms</li>
-            <li>Analyzing impact data from existing pilots</li>
-            <li>Designing sustainable funding models through circular economy principles</li>
-            <li>Building tools that connect UBI recipients to local value networks</li>
-          </ul>
-          <p>UBI isn't just about distribution—it's about creating interconnected local economies where value circulates and multiplies within communities.</p>
+          <span class="chip yellow">RBI</span>
+          <span class="chip pink">
+            <span data-lang="pt">Experimentos</span>
+            <span data-lang="en" style="display:none">Experiments</span>
+          </span>
+          <h3>
+            <span data-lang="pt">Experimentos de RBI</span>
+            <span data-lang="en" style="display:none">UBI Experiments</span>
+          </h3>
+          <p>
+            <span data-lang="pt">Estudantes aprenderão e contribuirão para experimentos reais de RBI acontecendo no Brasil e América Latina.</span>
+            <span data-lang="en" style="display:none">Students will learn from and contribute to real UBI experiments happening across Brazil and Latin America.</span>
+          </p>
+          <p>
+            <span data-lang="pt">RBI não é apenas sobre distribuição—é sobre criar economias locais interconectadas onde valor circula e multiplica dentro das comunidades.</span>
+            <span data-lang="en" style="display:none">UBI isn't just about distribution—it's about creating interconnected local economies where value circulates and multiplies within communities.</span>
+          </p>
         </div>
       </section>
 
+      <!-- Parceiros / Partners -->
       <section>
-        <h2>Timeline</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="year">Months 1-2</span>
-            <p><strong>Foundation</strong> - Research, platform design, and deployment. Partner onboarding and curriculum finalization.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="year">Months 3-5</span>
-            <p><strong>Pilot</strong> - 100 pilot students begin certification tracks. First cohort completion and feedback collection.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="year">Months 6-8</span>
-            <p><strong>Portfolio Building</strong> - Students build real-world portfolios including ReFi projects. Match-making with companies begins.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="year">Months 9-11</span>
-            <p><strong>Scale & Iterate</strong> - Evaluation of outcomes. Platform improvements based on data and feedback.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="year">Month 12</span>
-            <p><strong>Report & Roadmap</strong> - Comprehensive impact report. Updated roadmap for Year 2 expansion.</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Goals</h2>
-        <div class="stats-grid">
-          <div class="stat-item">
-            <span class="number">3,000</span>
-            <span class="label">Certifications issued</span>
-          </div>
-          <div class="stat-item">
-            <span class="number">50%</span>
-            <span class="label">Student retention</span>
-          </div>
-          <div class="stat-item">
-            <span class="number">100%</span>
-            <span class="label">Profile-based matching</span>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Project Team</h2>
+        <h2>
+          <span data-lang="pt">Parceiros</span>
+          <span data-lang="en" style="display:none">Partners</span>
+        </h2>
 
         <div class="card">
-          <h3>Luciana Sousa</h3>
-          <p class="meta"><strong>Lead & Partnerships</strong></p>
-          <p>Overall project coordination, university partnerships, and stakeholder management.</p>
-        </div>
-
-        <div class="card">
-          <h3>Alexandre Mello</h3>
-          <p class="meta"><strong>Tech Lead</strong></p>
-          <p>Platform architecture, Web3 integration, and technical infrastructure.</p>
-        </div>
-
-        <div class="card">
-          <h3>Marcelo Silva</h3>
-          <p class="meta"><strong>Research & Data Analysis</strong></p>
-          <p>Market research, impact measurement, and data-driven optimization.</p>
-        </div>
-
-        <div class="card">
-          <h3>Verber Souza</h3>
-          <p class="meta"><strong>Legal & Compliance</strong></p>
-          <p>Legal framework, institutional agreements, and regulatory compliance.</p>
-        </div>
-     <div class="card">
-          <h3>Pedro Parrachia</h3>
-          <p class="meta"><strong>Comms</strong></p>
-          <p>Comms strategy and execution.</p>
-        </div>
-        
-      </section>
-
-      <section>
-        <h2>Partners</h2>
-
-        <div class="card">
-          <span class="chip yellow">UBI Protocol</span>
-          <span class="chip green">Global</span>
+          <span class="chip yellow">
+            <span data-lang="pt">Protocolo RBI</span>
+            <span data-lang="en" style="display:none">UBI Protocol</span>
+          </span>
+          <span class="chip green">
+            <span data-lang="pt">Parceiro Fundador</span>
+            <span data-lang="en" style="display:none">Founding Partner</span>
+          </span>
           <h3>GoodDollar</h3>
-          <p>GoodDollar is a protocol that creates free money as a public good, distributing crypto UBI to over 500,000 members worldwide. Students will learn from GoodDollar's mechanisms and contribute to expanding UBI access in Brazil.</p>
+          <p>
+            <span data-lang="pt">Protocolo global de RBI distribuindo cripto para 500.000+ membros. Estudantes aprendem com mecanismos GoodDollar e contribuem para expansão brasileira.</span>
+            <span data-lang="en" style="display:none">Global UBI protocol distributing crypto to 500,000+ members. Students learn from GoodDollar's mechanisms and contribute to its Brazilian expansion.</span>
+          </p>
           <p><a href="https://www.gooddollar.org/" target="_blank" rel="noopener">gooddollar.org &rarr;</a></p>
         </div>
 
         <div class="card">
-          <span class="chip pink">University</span>
-          <span class="chip yellow">Bahia</span>
+          <span class="chip pink">
+            <span data-lang="pt">Parceiro de Execução Piloto</span>
+            <span data-lang="en" style="display:none">Pilot Execution Partner</span>
+          </span>
+          <span class="chip yellow">
+            <span data-lang="pt">Salvador, Bahia</span>
+            <span data-lang="en" style="display:none">Salvador, Bahia</span>
+          </span>
           <h3>UNIFACS</h3>
-          <p>One of Bahia's leading private universities, UNIFACS joins the Web3 Talent Database as an academic partner, connecting students from Salvador to Web3 career opportunities and certification tracks.</p>
+          <p>
+            <span data-lang="pt">Universidade privada líder na Bahia. Primeira turma piloto rodando na UNIFACS — parceiro acadêmico para desenvolvimento curricular.</span>
+            <span data-lang="en" style="display:none">Leading private university in Bahia. First pilot cohort running at UNIFACS — academic partner for curriculum development.</span>
+          </p>
           <p><a href="https://www.unifacs.br/" target="_blank" rel="noopener">unifacs.br &rarr;</a></p>
         </div>
 
         <div class="card">
-          <p><strong>Interested in partnering?</strong> We're looking for universities, Web3 projects, and companies to join the talent pipeline.</p>
-          <p><a href="contact.html">Become a Partner &rarr;</a></p>
+          <p>
+            <span data-lang="pt"><strong>Interessado em parceria?</strong> Buscamos universidades, projetos Web3 e empresas para integrar o pipeline de talentos.</span>
+            <span data-lang="en" style="display:none"><strong>Interested in partnering?</strong> We're looking for universities, Web3 projects, and companies to join the talent pipeline.</span>
+          </p>
+          <p><a href="contact.html">
+            <span data-lang="pt">Seja um Parceiro &rarr;</span>
+            <span data-lang="en" style="display:none">Become a Partner &rarr;</span>
+          </a></p>
         </div>
       </section>
 
+      <!-- Equipe do Projeto / Project Team -->
       <section>
-        <h2>Built on Our Track Record</h2>
+        <h2>
+          <span data-lang="pt">Equipe do Projeto</span>
+          <span data-lang="en" style="display:none">Project Team</span>
+        </h2>
+
         <div class="card">
-          <span class="chip green">34,000+</span>
-          <span class="chip pink">Students</span>
-          <span class="chip yellow">5 Years</span>
-          <span class="chip green">6 States</span>
-          <p>The Web3 Talent Database builds on Blockchain na Escola's proven infrastructure and methodology. With 5 years of experience reaching 34,000+ students across 6 states, we have the network, expertise, and track record to deliver results.</p>
-          <p><a href="impact.html">Explore Our Full Track Record &rarr;</a></p>
+          <h3>Luciana Sousa</h3>
+          <p class="meta">
+            <span data-lang="pt"><strong>Liderança &amp; Parcerias</strong></span>
+            <span data-lang="en" style="display:none"><strong>Lead &amp; Partnerships</strong></span>
+          </p>
+          <p>
+            <span data-lang="pt">Coordenação geral do projeto, parcerias universitárias e gestão de stakeholders.</span>
+            <span data-lang="en" style="display:none">Overall project coordination, university partnerships, and stakeholder management.</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Marcelo Silva</h3>
+          <p class="meta">
+            <span data-lang="pt"><strong>Pesquisa &amp; Análise de Dados</strong></span>
+            <span data-lang="en" style="display:none"><strong>Research &amp; Data Analysis</strong></span>
+          </p>
+          <p>
+            <span data-lang="pt">Pesquisa de mercado, medição de impacto e otimização orientada por dados.</span>
+            <span data-lang="en" style="display:none">Market research, impact measurement, and data-driven optimization.</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Verber Souza</h3>
+          <p class="meta">
+            <span data-lang="pt"><strong>Jurídico &amp; Compliance</strong></span>
+            <span data-lang="en" style="display:none"><strong>Legal &amp; Compliance</strong></span>
+          </p>
+          <p>
+            <span data-lang="pt">Estrutura jurídica, acordos institucionais e conformidade regulatória.</span>
+            <span data-lang="en" style="display:none">Legal framework, institutional agreements, and regulatory compliance.</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Histórico / Track Record -->
+      <section>
+        <h2>
+          <span data-lang="pt">Nosso Histórico</span>
+          <span data-lang="en" style="display:none">Built on Our Track Record</span>
+        </h2>
+        <div class="card">
+          <span class="chip green">34.000+</span>
+          <span class="chip pink">
+            <span data-lang="pt">Estudantes</span>
+            <span data-lang="en" style="display:none">Students</span>
+          </span>
+          <span class="chip yellow">5 Anos</span>
+          <span class="chip green">6 Estados</span>
+          <p>
+            <span data-lang="pt">O Banco de Talentos Web3 é construído sobre a infraestrutura e metodologia comprovadas da Blockchain na Escola. Com 5 anos de experiência alcançando 34.000+ estudantes em 6 estados, temos a rede, expertise e histórico para entregar resultados.</span>
+            <span data-lang="en" style="display:none">The Web3 Talent Database builds on Blockchain na Escola's proven infrastructure and methodology. With 5 years of experience reaching 34,000+ students across 6 states, we have the network, expertise, and track record to deliver results.</span>
+          </p>
+          <p><a href="impact.html">
+            <span data-lang="pt">Explore Nosso Histórico Completo &rarr;</span>
+            <span data-lang="en" style="display:none">Explore Our Full Track Record &rarr;</span>
+          </a></p>
         </div>
       </section>
 
       <div class="quick-links">
-        <a href="contact.html">Partner With Us &rarr;</a>
-        <a href="partners.html">View Our Partners &rarr;</a>
-        <a href="impact.html">Explore Our Track Record &rarr;</a>
+        <a href="contact.html">
+          <span data-lang="pt">Seja Parceiro &rarr;</span>
+          <span data-lang="en" style="display:none">Partner With Us &rarr;</span>
+        </a>
+        <a href="partners.html">
+          <span data-lang="pt">Ver Parceiros &rarr;</span>
+          <span data-lang="en" style="display:none">View Our Partners &rarr;</span>
+        </a>
+        <a href="impact.html">
+          <span data-lang="pt">Explore Nosso Histórico &rarr;</span>
+          <span data-lang="en" style="display:none">Explore Our Track Record &rarr;</span>
+        </a>
       </div>
     </main>
 
@@ -273,5 +586,22 @@
       <p>&copy; <script>document.write(new Date().getFullYear())</script> Blockchain na Escola</p>
     </footer>
   </div>
+
+  <script>
+    let currentLang = 'pt';
+    document.getElementById('lang-toggle').addEventListener('click', function () {
+      currentLang = currentLang === 'pt' ? 'en' : 'pt';
+      document.documentElement.lang = currentLang === 'pt' ? 'pt-BR' : 'en';
+
+      document.querySelectorAll('[data-lang="pt"]').forEach(function (el) {
+        el.style.display = currentLang === 'pt' ? '' : 'none';
+      });
+      document.querySelectorAll('[data-lang="en"]').forEach(function (el) {
+        el.style.display = currentLang === 'en' ? '' : 'none';
+      });
+
+      this.innerHTML = currentLang === 'pt' ? '🇬🇧 EN' : '🇧🇷 PT';
+    });
+  </script>
 </body>
 </html>
